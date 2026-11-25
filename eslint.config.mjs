@@ -10,7 +10,33 @@ const eslintConfig = defineConfig([
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
     plugins: { shadcn },
-    rules: {},
+    rules: {
+      "shadcn/no-arbitrary-values": "error",
+      "shadcn/no-inline-styles": "error",
+      "shadcn/no-raw-colors": "error",
+      "shadcn/no-restyle": [
+        "error",
+        {
+          allow: ["*"],
+          contracts: [
+            {
+              pattern: "^Button$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+          ],
+        },
+      ],
+      "shadcn/no-unknown-classes": "error",
+      "shadcn/require-static-classes": "error",
+    },
+  },
+  {
+    files: ["components/ui/**"],
+    rules: {
+      "shadcn/no-arbitrary-values": "off",
+      "shadcn/no-restyle": "off",
+    },
   },
   {
     plugins: {
