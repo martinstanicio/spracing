@@ -1,5 +1,9 @@
 {
   "mcpServers": {
+    "next-devtools": {
+      "args": ["-y", "next-devtools-mcp@latest"],
+      "command": "npx"
+    },
     "shadcn": {
       "args": ["-y", "shadcn@latest", "mcp"],
       "command": "npx"
