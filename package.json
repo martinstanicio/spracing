@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
+    "@blobatar/react": "^2.7.0",
     "@tabler/icons-react": "^3.53.0",
+    "blobatar": "^2.7.0",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.5.2",
     "next": "16.4.6",

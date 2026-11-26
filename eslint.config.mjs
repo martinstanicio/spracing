@@ -55,6 +55,11 @@ const eslintConfig = defineConfig([
               deny: ["h", "min-h", "max-h", "size"],
             },
             {
+              pattern: "^Blobatar$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size", "w", "min-w", "max-w"],
+            },
+            {
               pattern: "^Button$",
               allow: ["layout"],
               deny: ["h", "min-h", "max-h", "size"],
