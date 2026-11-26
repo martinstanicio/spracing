@@ -134,3 +134,14 @@
     @apply font-sans;
   }
 }
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+}

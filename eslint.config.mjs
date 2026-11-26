@@ -20,6 +20,83 @@ const eslintConfig = defineConfig([
           allow: ["*"],
           contracts: [
             {
+              pattern: "^Alert$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^AlertAction$",
+              allow: ["layout"],
+            },
+            {
+              pattern: "^AlertDescription$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^AlertDialog$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^AlertDialogAction$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^AlertDialogCancel$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^AlertDialogContent$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^AlertDialogDescription$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^AlertDialogFooter$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^AlertDialogHeader$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^AlertDialogMedia$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^AlertDialogOverlay$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^AlertDialogPortal$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^AlertDialogTitle$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^AlertDialogTrigger$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^AlertTitle$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
               pattern: "^Avatar$",
               allow: ["layout"],
               deny: ["h", "min-h", "max-h", "size", "w", "min-w", "max-w"],
@@ -58,6 +135,40 @@ const eslintConfig = defineConfig([
               pattern: "^Blobatar$",
               allow: ["layout"],
               deny: ["h", "min-h", "max-h", "size", "w", "min-w", "max-w"],
+            },
+            {
+              pattern: "^Breadcrumb$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^BreadcrumbEllipsis$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^BreadcrumbItem$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^BreadcrumbLink$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^BreadcrumbList$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^BreadcrumbPage$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^BreadcrumbSeparator$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
             },
             {
               pattern: "^Button$",
@@ -114,6 +225,127 @@ const eslintConfig = defineConfig([
               pattern: "^Checkbox$",
               allow: ["layout"],
               deny: ["h", "min-h", "max-h", "size", "w", "min-w", "max-w"],
+            },
+            {
+              pattern: "^Dialog$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DialogClose$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DialogContent$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DialogDescription$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^DialogFooter$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^DialogHeader$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^DialogOverlay$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DialogPortal$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DialogTitle$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^DialogTrigger$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenu$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuCheckboxItem$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuContent$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuGroup$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^DropdownMenuItem$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuLabel$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^DropdownMenuPortal$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuRadioGroup$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^DropdownMenuRadioItem$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuSeparator$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuShortcut$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^DropdownMenuSub$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuSubContent$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuSubTrigger$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^DropdownMenuTrigger$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
             },
             {
               pattern: "^Empty$",
@@ -454,13 +686,119 @@ const eslintConfig = defineConfig([
               allow: ["layout"],
             },
             {
+              pattern: "^Sheet$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^SheetClose$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^SheetContent$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^SheetDescription$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^SheetFooter$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^SheetHeader$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^SheetOverlay$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^SheetPortal$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^SheetTitle$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^SheetTrigger$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
               pattern: "^Skeleton$",
               allow: ["layout"],
+            },
+            {
+              pattern: "^Spinner$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size", "w", "min-w", "max-w"],
             },
             {
               pattern: "^Switch$",
               allow: ["layout"],
               deny: ["h", "min-h", "max-h", "size", "w", "min-w", "max-w"],
+            },
+            {
+              pattern: "^Table$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^TableBody$",
+              allow: ["layout"],
+            },
+            {
+              pattern: "^TableCaption$",
+              allow: ["layout", "typography"],
+              deny: ["font-*"],
+            },
+            {
+              pattern: "^TableCell$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^TableFooter$",
+              allow: ["layout"],
+            },
+            {
+              pattern: "^TableHead$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^TableHeader$",
+              allow: ["layout"],
+            },
+            {
+              pattern: "^TableRow$",
+              allow: ["layout"],
+            },
+            {
+              pattern: "^Tabs$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^TabsContent$",
+              allow: ["layout", "spacing"],
+            },
+            {
+              pattern: "^TabsList$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
+            },
+            {
+              pattern: "^TabsTrigger$",
+              allow: ["layout"],
+              deny: ["h", "min-h", "max-h", "size"],
             },
             {
               pattern: "^Textarea$",
@@ -567,6 +905,7 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
     ".agents/**",
+    "drizzle/**",
   ]),
 ])
 
